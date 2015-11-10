@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row" ng-controller="app.features.DashboardController as vm">
+    <div class="col-md-4">
+
+
+        <button ng-click="vm.loadPeople()">Load People</button>
+        <div ng-show="!vm.isLoading && vm.people">
+            <ul>
+                <li ng-repeat="person in vm.people" ng-click="vm.selectPerson(person)">
+                    {{ person.NameFirst }}
+                </li>
+            </ul>
+            Result Count: {{ vm.people.length }} of {{ vm.pagingInfo.TotalCount }}<br />
+            Page Number: {{ vm.pagingInfo.Page + 1 }} of {{ vm.pagingInfo.PageCount }}<br />
+            Page Size: {{ vm.pagingInfo.Limit }}<br />
+            <br />
+            Selected Person:  {{ vm.selectedPerson.NameFirst }}
+        </div>
+        <div ng-show="vm.isLoading">
+            Loading data...
+        </div>
+    </div>
+   
+</div>

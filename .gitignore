@@ -229,5 +229,6 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 
-#TS JS maps
+# TypeScript JS and maps
 *.map
+TypeScript.Demo/app/**/*.js
