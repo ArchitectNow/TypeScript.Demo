@@ -1,5 +1,5 @@
-class PersonTest {
-    constructor() {
+var PersonTest = (function () {
+    function PersonTest() {
         this._id = -1;
         this.ID = 0;
         this.Name = '';
@@ -7,15 +7,16 @@ class PersonTest {
         this.Name = 'Bob';
     }
     ;
-    DoWork(input) {
+    PersonTest.prototype.DoWork = function (input) {
         var _person = new PersonTest();
         _person.ID = 123;
         _person.Name = "Kevin" + input;
         var _cast = _person;
         return _person;
-    }
-    MoreWork(input) {
+    };
+    PersonTest.prototype.MoreWork = function (input) {
         return input.toString();
-    }
-}
+    };
+    return PersonTest;
+})();
 //# sourceMappingURL=Person.js.map

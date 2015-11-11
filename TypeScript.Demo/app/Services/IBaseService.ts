@@ -45,7 +45,7 @@
                 .then((response: ng.IHttpPromiseCallbackArg<IEnvelope<entity>>): IEnvelope<entity> => {
                     return <IEnvelope<entity>>response.data;
                 });
-        }
+        };
 
         getAll(page: number = 0, limit: number = 25): ng.IPromise<IPagedResultEnvelope<entity[]>> {
             return this.$http.get(this.rootUrl + '/get?page=' + page.toString() + '&limit=' + limit.toString())

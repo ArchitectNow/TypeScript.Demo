@@ -43,7 +43,7 @@
         };
 
         loadPeople(): void {
-            var _result = this.personService.getAll(0,10);
+            var _result = this.personService.getAll();
             
             this.isLoading = true;
 
