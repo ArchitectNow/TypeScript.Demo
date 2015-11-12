@@ -66,7 +66,7 @@ namespace TypeScript.Demo.Areas.API.Controllers
         #endregion
 
         [HttpGet]
-        public virtual async Task<PagedResultEnvelope<TEntity>> Get([QueryString] int page = 0, [QueryString] int limit = 25)
+        public virtual async Task<PagedResultEnvelope<TEntity>> GetAll([QueryString] int page = 0, [QueryString] int limit = 25)
         {
             try
             {

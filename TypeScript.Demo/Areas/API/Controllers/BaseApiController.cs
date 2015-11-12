@@ -11,7 +11,7 @@ namespace TypeScript.Demo.Areas.API.Controllers
 {
     public abstract class BaseApiController : ApiController
     {
-        public Envelope<T> BuildResult<T>(bool Success, string Message, T Content)
+        protected Envelope<T> BuildResult<T>(bool Success, string Message, T Content)
         {
             if (Content != null)
             {
