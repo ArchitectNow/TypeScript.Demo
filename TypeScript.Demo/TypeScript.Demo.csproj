@@ -295,7 +295,6 @@
     <TypeScriptCompile Include="app\Services\app.services.module.ts" />
     <TypeScriptCompile Include="app\Services\IBaseService.ts" />
     <TypeScriptCompile Include="app\Services\person.service.ts" />
-    <TypeScriptCompile Include="Person.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
