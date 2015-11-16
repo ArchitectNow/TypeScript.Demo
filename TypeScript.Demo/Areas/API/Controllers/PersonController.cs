@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArchitectNow.Framework.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -18,6 +19,11 @@ namespace TypeScript.Demo.Areas.API.Controllers
         {
             this.PersonRepository = PersonRepository;
             this.Repository = PersonRepository;
+        }
+
+        public Envelope<bool> CheckActive(Guid ID)
+        {
+            return new Envelope<bool>() { Content = true };
         }
     }
 }

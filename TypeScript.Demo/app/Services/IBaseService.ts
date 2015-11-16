@@ -48,7 +48,7 @@
         };
 
         getAll(page: number = 0, limit: number = 25): ng.IPromise<IPagedResultEnvelope<entity[]>> {
-            return this.$http.get(this.rootUrl + '/get?page=' + page.toString() + '&limit=' + limit.toString())
+            return this.$http.get(this.rootUrl + '/getall?page=' + page.toString() + '&limit=' + limit.toString())
                 .then((response: ng.IHttpPromiseCallbackArg<IPagedResultEnvelope<entity[]>>): IPagedResultEnvelope<entity[]> => {
                     return <IPagedResultEnvelope<entity[]>>response.data;
                 });

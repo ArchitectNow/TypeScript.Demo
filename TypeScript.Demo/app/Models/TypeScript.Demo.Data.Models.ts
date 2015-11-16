@@ -1,4 +1,5 @@
 /// <reference path="include.ts" />
+'use strict';
 
 module TypeScript.Demo.Data.Models {
 	interface ILogMessage  {
@@ -14,13 +15,11 @@ module TypeScript.Demo.Data.Models {
 	interface IPerson  {
 		NameFirst: string;
 		DateOfBirth: any;
-		ChrisName: string;
 	}
 
 	export class Person implements IPerson  {
 		NameFirst: string;
 		DateOfBirth: any;
-		ChrisName: string;
 	}
 
 	interface IUser  {

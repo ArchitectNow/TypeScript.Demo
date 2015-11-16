@@ -15,7 +15,6 @@ namespace TypeScript.Demo.Data.Models
 
         public DateTime DateOfBirth { get; set; }
 
-        public string ChrisName { get; set; }
 
     }
 }
